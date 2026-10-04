@@ -1,29 +1,24 @@
-dm_chat_prefix "[{red}Deathmatch{default}]"
-    Prefix displayed before chat messages.
+Arcfrag Deathmatch
+==================
 
-dm_modes_file "addons/swiftlys2/plugins/Deathmatch/resources/configs/default.json"
-    Path to the modes configuration file.
+Deathmatch/FFA plugin for Arcfrag (SwiftlyS2). Fork of ianlucas/cs2-ss2-deathmatch (MIT).
+Stats, Elo, challenges, map rotation and the HUD come from ArcfragCore; this plugin owns
+the gameplay: weapon rounds, loadouts, kill rewards and the deathmatch cvars.
 
-dm_pro_ratio ""
-    Target K/D ratio that pro players typically achieve in deathmatch.
+Arcfrag changes
+  - Plugin id/folder ArcfragDeathmatch, chat prefix in the Arcfrag style.
+  - No K/D alert and no round hint text (the Arcfrag UI owns the HUD); a round change is
+    one chat line instead. dm_pro_ratio is gone.
+  - mp_timelimit 10 (the core's map vote runs at the end of the map).
 
-dm_replenish_health 10
-    Amount of health replenished per kill.
+Commands
+  !guns        weapons of the current round and their commands
+  !<weapon>    take that weapon (!ak, !m4, !m4a1s, !awp, !deagle, ...)
+  !noprimary   pistol only
+  !help        help
 
-dm_replenish_health_headshot 25
-    Amount of health replenished per headshot kill.
-
-dm_replenish_armor 5
-    Amount of armor replenished per kill.
-
-dm_replenish_armor_headshot 20
-    Amount of armor replenished per headshot kill.
-
-sw_guns
-    Display available weapons and their command aliases.
-
-sw_noprimary
-    Remove your primary weapon and opt out of primary weapon assignment.
-
-sw_help
-    Display help information.
+ConVars
+  dm_chat_prefix " {gold}arcfrag.net{default} •"
+  dm_modes_file "addons/swiftlys2/plugins/ArcfragDeathmatch/resources/configs/default.json"
+  dm_replenish_health 10 / dm_replenish_health_headshot 25
+  dm_replenish_armor 5 / dm_replenish_armor_headshot 20

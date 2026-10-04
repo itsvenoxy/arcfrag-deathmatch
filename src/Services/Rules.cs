@@ -60,6 +60,23 @@ public static class Rules
             return;
         ConVars.FreeArmor.Value = CurrentMode.Value.Helmet ? 2 : 1;
         ResetPlayers();
+        AnnounceRound();
+    }
+
+    /// <summary>Arcfrag: the weapon round change as one chat line (replaces the old hint text).</summary>
+    private static void AnnounceRound()
+    {
+        if (!HasMultipleModes() || CurrentMode == null)
+            return;
+        var text = Runtime.Core.Localizer[
+            "dm.round_start",
+            GetChatPrefix(),
+            CurrentMode.Value.Name,
+            TimeHelper.FormatMmSs(CurrentMode.Value.Duration),
+            GetNextMode()?.Name ?? "-"
+        ];
+        foreach (var player in Runtime.Core.PlayerManager.GetAllValidPlayers().Where(p => !p.IsFakeClient))
+            player.SendChat(text);
     }
 
     private static void ResetPlayers()

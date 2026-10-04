@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Pistols",
+    "weapons": [
+      "usp_silencer",
+      "deagle",
+      "elite",
+      "fiveseven",
+      "glock",
+      "tec9",
+      "hkp2000",
+      "p250",
+      "cz75a",
+      "revolver"
+    ],
+    "helmet": false,
+    "duration": 3600,
+    "bots": {
+      "secondary": [
+        {
+          "weapon": "usp_silencer",
+          "probability": 0.8
+        },
+        {
+          "weapon": "glock",
+          "probability": 0.1
+        },
+        {
+          "weapon": "deagle",
+          "probability": 0.1
+        }
+      ]
+    }
+  }
+]

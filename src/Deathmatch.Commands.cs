@@ -19,10 +19,10 @@ public partial class Deathmatch
                 "dm.guns",
                 Rules.GetChatPrefix(),
                 string.Join(
-                    "[white], ",
+                    "[default], ",
                     (mode?.GetWeapons() ?? [])
-                        .Select(g => $"[lime]!{g.Aliases[0]}")
-                        .Concat(mode?.HasPrimary == true ? ["[lime]!noprimary"] : [])
+                        .Select(g => $"[gold]!{g.Aliases[0]}")
+                        .Concat(mode?.HasPrimary == true ? ["[gold]!noprimary"] : [])
                 )
             ]
         );
