@@ -6,9 +6,10 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-    <AssemblyName>Deathmatch</AssemblyName>
+    <AssemblyName>ArcfragDeathmatch</AssemblyName>
+    <Version>1.2.0</Version>
     <OutputPath>$(MSBuildThisFileDirectory)build/</OutputPath>
-    <PublishDir>$(OutputPath)publish/addons/swiftlys2/plugins/Deathmatch</PublishDir>
+    <PublishDir>$(OutputPath)publish/addons/swiftlys2/plugins/ArcfragDeathmatch</PublishDir>
   </PropertyGroup>
 
   <ItemGroup>

@@ -12,11 +12,11 @@ using SwiftlyS2.Shared.Sounds;
 namespace Deathmatch;
 
 [PluginMetadata(
-    Id = "Deathmatch",
-    Version = "1.0.0",
-    Name = "Deathmatch",
-    Author = "Ian Lucas",
-    Description = "A SwiftlyS2 plugin for Deathmatch/FFA gamemode"
+    Id = "ArcfragDeathmatch",
+    Version = "1.2.0",
+    Name = "Arcfrag Deathmatch",
+    Author = "Arcfrag (based on cs2-ss2-deathmatch by Ian Lucas)",
+    Description = "Deathmatch/FFA for Arcfrag: weapon rounds, loadouts, kill rewards"
 )]
 public partial class Deathmatch(ISwiftlyCore core) : BasePlugin(core)
 {

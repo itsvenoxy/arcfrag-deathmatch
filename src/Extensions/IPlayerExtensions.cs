@@ -194,7 +194,7 @@ public static class IPlayerExtensions
                         "dm.attacker_damage",
                         Rules.GetChatPrefix(),
                         (int)record.Damage,
-                        $" ([lime]{record.NumHits}[white] {(record.NumHits > 1 ? Runtime.Core.Localizer["dm.attacker_damage_hits"] : Runtime.Core.Localizer["dm.attacker_damage_hit"])})",
+                        $" ([gold]{record.NumHits}[default] {(record.NumHits > 1 ? Runtime.Core.Localizer["dm.attacker_damage_hits"] : Runtime.Core.Localizer["dm.attacker_damage_hit"])})",
                         self.Controller.PlayerName
                     ]
                 );
@@ -207,16 +207,6 @@ public static class IPlayerExtensions
                     self.Controller.PlayerName
                 ]
             );
-        }
-
-        public string GetKDR()
-        {
-            var matchStats = self.Controller.ActionTrackingServices?.MatchStats;
-            if (matchStats == null)
-                return "0.00";
-            var kills = Math.Max(0, matchStats.Kills);
-            var deaths = Math.Max(1, matchStats.Deaths);
-            return (kills / (float)deaths).ToString("0.00");
         }
 
         public void ResetStats()

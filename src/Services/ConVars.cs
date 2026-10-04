@@ -13,19 +13,13 @@ public static class ConVars
     public static readonly IConVar<string> ChatPrefix = Runtime.Core.ConVar.CreateOrFind(
         "dm_chat_prefix",
         "Prefix displayed before chat messages.",
-        "[{red}Deathmatch{default}]"
+        " {gold}arcfrag.net{default} •"
     );
 
     public static readonly IConVar<string> ModesFile = Runtime.Core.ConVar.CreateOrFind(
         "dm_modes_file",
         "Path to the modes configuration file.",
-        "addons/swiftlys2/plugins/Deathmatch/resources/configs/default.json"
-    );
-
-    public static readonly IConVar<string> ProRatio = Runtime.Core.ConVar.CreateOrFind(
-        "dm_pro_ratio",
-        "Target K/D ratio that pro players typically achieve in deathmatch.",
-        ""
+        "addons/swiftlys2/plugins/ArcfragDeathmatch/resources/configs/default.json"
     );
 
     public static readonly IConVar<int> ReplenishHealth = Runtime.Core.ConVar.CreateOrFind(
