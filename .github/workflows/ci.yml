@@ -39,7 +39,7 @@ jobs:
       - name: Update module version
         if: inputs.version != ''
         run: |
-          sed -i 's/Version = "1.2.0"/Version = "${{ inputs.version }}"/g' src/Deathmatch.cs
+          sed -i 's/Version = "1.3.0"/Version = "${{ inputs.version }}"/g' src/Deathmatch.cs
 
       - name: Set up .NET 10
         uses: actions/setup-dotnet@v5

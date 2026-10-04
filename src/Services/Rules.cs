@@ -16,6 +16,7 @@ public static class Rules
     public static void SetModes(IEnumerable<Mode> modes)
     {
         Modes = new(modes);
+        CurrentMode = null; // Arcfrag: start the new list, not the next node of the old one
         ModeStartedAt = 0;
     }
 
