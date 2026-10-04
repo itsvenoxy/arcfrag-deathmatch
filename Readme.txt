@@ -9,6 +9,7 @@ Arcfrag changes
   - Plugin id/folder ArcfragDeathmatch, chat prefix in the Arcfrag style.
   - No K/D alert and no round hint text (the Arcfrag UI owns the HUD); a round change is
     one chat line instead. dm_pro_ratio is gone.
+  - default.json: one round with every weapon (normal DM). pistol.json: pistols only.
   - mp_timelimit 10 (the core's map vote runs at the end of the map).
 
 Commands
