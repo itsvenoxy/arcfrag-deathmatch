@@ -13,7 +13,7 @@ namespace Deathmatch;
 
 [PluginMetadata(
     Id = "ArcfragDeathmatch",
-    Version = "1.3.0",
+    Version = "1.3.1",
     Name = "Arcfrag Deathmatch",
     Author = "Arcfrag (based on cs2-ss2-deathmatch by Ian Lucas)",
     Description = "Deathmatch/FFA for Arcfrag: weapon rounds, loadouts, kill rewards"

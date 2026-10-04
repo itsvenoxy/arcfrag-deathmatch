@@ -71,7 +71,7 @@ public static class IPlayerExtensions
             if (!session.IsInitialHelpSent)
             {
                 self.ResetStats();
-                self.PrintHelp();
+                // No help on spawn: ArcfragCore's join block names !guns/!noprimary (chat v2). !help still prints it.
                 session.IsInitialHelpSent = true;
             }
         }
